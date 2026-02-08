@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu Singh - Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>P</span>riyanshu.</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-wrapper">
+                <div class="header-text hidden">
+                    <p>I am a <span id="typing-text"></span></p>
+                    <h1>Hi, I'm <span>Priyanshu Singh</span><br> From India</h1>
+                    <p class="header-desc">I design and build pixel-perfect, engaging, and accessible digital experiences. Let's create something amazing together.</p>
+                    
+                    <div class="header-actions">
+                        <a href="#contact" class="btn-hero">Hire Me</a>
+                        <a href="#portfolio" class="btn-hero outline">My Work</a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/priyanshu-singh-349092389" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/priyanshu04295-glitch" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/priyanshu_.o07/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:priyanhsu04295@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="header-image hidden">
+                    <img src="me.jpg" alt="Priyanshu Singh">
+                    <!-- Floating Badge -->
+                    <div class="exp-badge">
+                        <span class="badge-num">2+</span>
+                        <span class="badge-text">Years<br>Exp.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 hidden">
+                    <img src="me.jpeg" alt="Priyanshu Singh">
+                </div>
+                <div class="about-col-2 hidden">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! I'm Priyanshu Singh, a passionate tech enthusiast from Gorakhpur, India. 
+                        As a Computer Science undergraduate, I thrive on turning complex problems into elegant concepts.
+                        My journey involves mastering full-stack web development, creating stunning video visuals, and designing intuitive interfaces.
+                        I believe in continuous learning and pushing the boundaries of what's possible on the web.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <span>Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <span>Happy Clients</span>
+                        </div>
+                    </div>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Figma, Adobe XD, User Flow</li>
+                            <li><span>Web Development</span><br>HTML/CSS, JavaScript, React</li>
+                            <li><span>Video Editing</span><br>Premiere Pro, After Effects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Freelance Web Developer</li>
+                            <li><span>2024 - 2025</span><br>Front-end Developer Intern</li>
+                            <li><span>2023 - 2024</span><br>Video Editor for Content Creators</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025 - 2029</span><br>B.Tech in CSE at KIET Group of Institutions</li>
+                            <li><span>2023 - 2025</span><br>Higher Secondary Education (PCM)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title hidden">My Services</h1>
+            <div class="services-list">
+                <div class="hidden">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create visually appealing and user-friendly websites tailored to your specific needs, ensuring a great user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="hidden">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design clean, intuitive, and accessible interfaces that enhance usability and deliver smooth digital experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="hidden">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I craft modern and engaging mobile app interfaces that provide smooth navigation and a delightful user journey.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title hidden">My Work</h1>
+            <div class="worklist">
+                <div class="work hidden">
+                    <img src="work-1.png" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world. Download it from the play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="work-2.png" alt="Music App">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Stream your favorite music seamlessly. Validated by thousands of users.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="work-3.png" alt="Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Shop the latest trends easily with our secure and fast shopping application.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn hidden">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left hidden">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="mailto:priyanhsu04295@gmail.com" target="_blank"><i class="fa-solid fa-paper-plane"></i> <span>Email</span></a>
+                        <a href="https://wa.me/919250064800" target="_blank"><i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span></a>
+                        <a href="https://www.linkedin.com/in/priyanshu-singh-349092389" target="_blank"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a>
+                        <a href="https://github.com/priyanshu04295-glitch" target="_blank"><i class="fa-brands fa-github"></i> <span>GitHub</span></a>
+                        <a href="https://www.instagram.com/priyanshu_.o07/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © <i class="fa-solid fa-heart"></i> Priyanshu Singh. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
